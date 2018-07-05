@@ -14,10 +14,10 @@ class gymloctionsController extends Controller
     public function index()
     {
           //Get gym locations
-          $locations = gymLocation::paginate(5);
+          $locations = gymLocation::all;
 
           //return collection of instructors as a resource
-          return LocationResource::collection($locations);
+          return $locations;
     }
 
     /**
