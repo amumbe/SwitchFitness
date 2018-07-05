@@ -49,9 +49,7 @@ class gymloctionsController extends Controller
      */
     public function show($id)
     {
-        $locations = gymLocation::find($id);
-        //Return as a resource
-        return new LocationResource($locations);
+        
     }
 
     /**

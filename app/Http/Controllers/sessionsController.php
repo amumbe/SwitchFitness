@@ -44,7 +44,7 @@ class sessionsController extends Controller
         $session->date = $request->input('date');
 
         if($session->save()){
-            return new SessionResource($session);
+            return $session;
         }
     }
 

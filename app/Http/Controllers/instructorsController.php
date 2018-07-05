@@ -53,7 +53,7 @@ class InstructorsController extends Controller
         //show a single instructor
         $instructor = instructors::find($id);
         //Return as a resource
-        return new InstructorResource($instructor);
+        return $instructor;
     }
 
     /**
