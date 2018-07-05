@@ -13,10 +13,10 @@ class usersController extends Controller
      */
     public function index()
     {
-        $users = users::paginate(5);
+        $users = users::all;
 
         //return collection of users as a resource
-        return UserResource::collection($users);
+        return $users;
     }
 
     /**
