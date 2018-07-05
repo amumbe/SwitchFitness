@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+App\instructor;
 
 class InstructorsController extends Controller
 {
