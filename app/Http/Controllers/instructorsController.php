@@ -15,7 +15,7 @@ class InstructorsController extends Controller
     public function index()
     {
          //Get instroctor
-         $instructors = instructor::all();
+         $instructors = instructors::all();
 
          //return collection of instructors as a resource
          return $instructors;
