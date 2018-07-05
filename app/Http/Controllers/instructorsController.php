@@ -15,7 +15,7 @@ class InstructorsController extends Controller
     public function index()
     {
          //Get instroctor
-         $instructors = instructors::all;
+         $instructors = instructor::all;
 
          //return collection of instructors as a resource
          return $instructors;
@@ -52,7 +52,7 @@ class InstructorsController extends Controller
     public function show($id)
     {
         //show a single instructor
-        $instructors = instructors::find($id);
+        $instructors = instructor::find($id);
         //Return as a resource
         return $instructors;
     }
