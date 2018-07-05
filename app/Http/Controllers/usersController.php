@@ -49,9 +49,9 @@ class usersController extends Controller
     public function show($id)
     {
          //show a single user
-         $user = users::findOrFail($id);
+         $user = users::all;
          //Return as a resource
-         return new UserResource($user);
+         return $user;
     }
 
     /**

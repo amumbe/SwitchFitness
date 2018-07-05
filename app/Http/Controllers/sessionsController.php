@@ -57,7 +57,7 @@ class sessionsController extends Controller
     public function show($id)
     {
          //show a single session
-         $sessions = sessions::all
+         $sessions = sessions::all;
          //Return as a resource
          return $sessions;
         
