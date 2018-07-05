@@ -57,9 +57,9 @@ class sessionsController extends Controller
     public function show($id)
     {
          //show a single session
-         $sessions = sessions::paginate(7);
+         $sessions = sessions::all
          //Return as a resource
-         return new SessionResource($sessions);
+         return $sessions;
         
 
          //$sessions = sessions::find($userID);
