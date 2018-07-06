@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\instructors;
+use App\instructor;
 
 class InstructorsController extends Controller
 {
@@ -15,10 +15,10 @@ class InstructorsController extends Controller
     public function index()
     {
          //Get instroctor
-         $instructors = instructors::all();
+         $instructor = instructors::all();
 
          //return collection of instructors as a resource
-         return $instructors;
+         return $instructor;
  
     }
 
@@ -52,9 +52,9 @@ class InstructorsController extends Controller
     public function show($id)
     {
         //show a single instructor
-        $instructors = instructors::find($id);
+        $instructor = instructors::find($id);
         //Return as a resource
-        return $instructors;
+        return $instructor;
     }
 
     /**
